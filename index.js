@@ -11,6 +11,7 @@ const {
   Menu,
   globalShortcut,
   shell,
+  session
 } = require("electron");
 const contextMenu = require("electron-context-menu");
 
@@ -22,6 +23,13 @@ app.on("ready", () => {
   Nucleus.init("638d9ccf4a5ed2dae43ce122");
 
   const tray = new Tray(image);
+  
+  // set proxy
+  session.defaultSession.setProxy({
+    proxyRules: 'http://127.0.0.1:7890',
+    proxyBypassRules: '<local>'
+  })
+
 
   const mb = menubar({
     browserWindow: {
