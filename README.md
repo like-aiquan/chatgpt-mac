@@ -1,3 +1,3 @@
 ### forked from https://github.com/vincelwt/chatgpt-mac
 1. add default proxy to clashx
-2. change keyboard shortcuts for show/hidden app
+2. change keyboard shortcuts for show/hidden app (command+shift+g --->  option+shift+g)
