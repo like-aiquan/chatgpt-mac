@@ -13,14 +13,6 @@ module.exports = {
       gatekeeperAssess: false,
       identity: "Developer ID Application: Lyser.io Ltd (R4PF6TTR6Z)",
     },
-    osxNotarize: {
-      appBundleId: "com.vincelwt.chatgptmac",
-
-      tool: "notarytool",
-      appleId: parsed.APPLE_ID,
-      appleIdPassword: parsed.APPLE_PASSWORD,
-      teamId: parsed.APPLE_TEAM_ID,
-    },
   },
   publishers: [
     {
